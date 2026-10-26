@@ -1,0 +1,81 @@
+/* Dark palette and project showcase. */
+:root{color-scheme:dark;--paper:#0b0d0c;--ink:#f1f4eb;--muted:#a4afa3;--green:#d2f576;--line:#2b342d}
+body{background:radial-gradient(ellipse at 85% 10%,#b5f56d12,transparent 35%),radial-gradient(ellipse at 0 45%,#558c8010,transparent 40%),var(--paper)}
+header{background:#0b0d0cf0}
+.mark{background:var(--green);color:#17200e}
+.btn{background:var(--green);color:#17200e;border-color:var(--green)}
+.btn:hover{background:#e1ff9b;color:#17200e}
+.btn.light{background:#ffffff04;color:var(--ink);border-color:#475345}
+.btn.light:hover{background:#ffffff0c}
+h1 span{color:#17200e;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.dot{background:var(--green);box-shadow:0 0 16px #d2f57660}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline-color:var(--green)}
+.hero{grid-template-columns:1fr 1fr;gap:44px}
+.hero>div{min-width:0}
+.board{background:linear-gradient(145deg,#202a22,#131b16);border-color:#43533b;padding:20px;transform:rotate(1deg);box-shadow:0 25px 80px #0006,0 0 70px #baff5610}
+.boardtop{font-size:9px;letter-spacing:1px;margin-bottom:18px}
+.pips i{background:#66735e}
+.project-picker{display:flex;padding:4px;background:#0d130e;border:1px solid #34432e;border-radius:9px;gap:4px;margin-bottom:16px}
+.project-choice{flex:1;border:0;border-radius:6px;padding:12px 5px;background:transparent;color:#b3bfae;font-size:12px;font-weight:600}
+.project-choice[aria-pressed=true]{background:var(--green);color:#17200e;box-shadow:0 2px 10px #0002}
+.project-choice:hover{background:#304027;color:white}
+.project-choice[aria-pressed=true]:hover{background:#e1ff9b;color:#17200e}
+.product{background:#f4f5ee;color:#20251d;padding:24px;border:1px solid #ffffff20;min-height:420px;box-shadow:0 8px 30px #0002}
+.product[hidden]{display:none}
+.product p{color:#606959}
+.app-topline{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.app-brand{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:700;letter-spacing:1px}
+.app-icon{display:grid;place-items:center;background:#242f20;color:#d2f576;width:26px;height:26px;border-radius:7px;font-size:18px}
+.tag{background:#e5eadc;color:#43513a;font-size:8px;letter-spacing:.8px;white-space:nowrap}
+.product h3{font-size:32px;line-height:1.08;margin:22px 0 12px}
+.product p{margin:0 0 18px}
+.membership{display:flex;align-items:center;justify-content:space-between;background:#e4ebd9;border:1px solid #d3dfc3;padding:15px;border-radius:8px;margin-bottom:20px}
+.membership strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:21px;margin-top:4px}
+.mini-label{font-size:8px;letter-spacing:1px;color:#526445}
+.membership-status{font-size:10px;color:#3f5b2a;background:#f7fbee;padding:7px 10px;border-radius:20px}
+.app-section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px;font-size:12px;gap:8px}
+.app-section-title>span{font-size:8px;letter-spacing:.6px;color:#6a7362}
+.class-row,.meal-row{display:flex;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid #dce2d2;font-size:11px}
+.class-time{font-size:11px;color:#647357;font-variant-numeric:tabular-nums}
+.class-row>div,.meal-row>div{flex:1}
+.class-row strong,.meal-row strong{display:block;font-size:12px}
+.class-row div>span,.meal-row div>span{display:block;color:#6a7362;font-size:10px;margin-top:4px}
+.class-state{background:#d3eab7;color:#34501f;padding:6px 8px;border-radius:5px;font-size:9px;white-space:nowrap}
+.class-state.outline{background:transparent;border:1px solid #cbd5c0}
+.product .example-caption{font-size:10px;margin:14px 0 0;line-height:1.5}
+.food-product{background:#faf3e8}
+.food-product .app-icon{background:#513a25;color:#ffcc8f}
+.food-product .tag{background:#eee1cc;color:#735335}
+.nutrition-summary{display:flex;align-items:center;gap:25px;margin-bottom:18px;padding:5px 10px}
+.calorie-ring{width:112px;height:112px;border-radius:50%;background:conic-gradient(#c4793b 0 62%,#e9dece 62% 100%);padding:9px;flex-shrink:0}
+.calorie-ring>div{height:100%;border-radius:50%;background:#faf3e8;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.calorie-ring strong{font:600 25px 'Space Grotesk',sans-serif;letter-spacing:-1px}
+.calorie-ring span{font-size:9px;color:#756655;margin-top:3px}
+.macro-list{flex:1;display:grid;gap:12px;font-size:11px}
+.macro-list>div{display:flex;justify-content:space-between;gap:12px}
+.macro-list span{color:#756655}
+.meal-icon{display:grid;place-items:center;width:29px;height:29px;background:#eadcc7;border-radius:7px;color:#9d6234;font-size:23px}
+.meal-row{border-color:#e5dac8}
+.meal-row small{font-size:9px;font-weight:400;color:#756655}
+.step{background:#253021;color:#c7d0bf}
+.step b{color:#c5e88c}
+.boardfoot{gap:10px;color:#bac6b1;font-size:10px;flex-wrap:wrap}
+.live{background:#d2f576;color:#20251d;font-size:9px}
+.showcase-note{margin:13px 0 0;text-align:center;font-size:9px;color:#9eaf95}
+.curriculum{background:#111712;border-color:var(--line)}
+.module,.module:first-child{border-color:var(--line)}
+.modnum{color:#a2b38f}
+.plus{border-color:#506044}
+.module[open] .plus{background:var(--green);color:#17200e}
+.resourcebox{background:#131b15}
+.resourcebox div{border-color:var(--line)}
+.check{color:var(--green)}
+.offer{background:linear-gradient(120deg,#1f2b1b,#121a15);color:var(--ink);border:1px solid #455638}
+.offer .btn{color:#17200e}
+.prototype{background:#202a20;color:#c5d4b7}
+.lesson{background:#1c281b}
+.close{color:var(--ink)}
+@media(max-width:1000px) and (min-width:801px){.hero{gap:24px}.board{padding:14px}.product{padding:18px}.app-brand{font-size:9px}.project-choice{font-size:10px}.nutrition-summary{gap:15px;padding:5px 0}}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:40px}.board{transform:none}.boardtop{font-size:9px}}
+@media(max-width:480px){nav{height:auto;min-height:76px;gap:10px;flex-wrap:wrap;padding-top:12px!important;padding-bottom:12px!important}.logo{font-size:19px}.mark{height:28px;width:28px;margin-right:6px}.navlinks .btn{padding:10px 12px;font-size:11px}.board{padding:12px}.product{padding:18px;min-height:420px}.product h3{font-size:29px}.app-brand{font-size:9px}.tag{font-size:7px;padding:6px}.steps{gap:5px}.step{font-size:9px;padding:12px 4px}.boardtop{letter-spacing:0;font-size:8px}.project-choice{font-size:11px}.nutrition-summary{gap:18px;padding:5px 0}.boardfoot{line-height:1.5}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
